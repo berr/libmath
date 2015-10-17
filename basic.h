@@ -8,6 +8,7 @@ int floor(double x);
 double abs(double x);
 double exp_2_int(int n);
 double ceil_log_2(double x);
+int sign(double x);
 
 
 

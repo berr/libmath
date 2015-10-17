@@ -37,4 +37,7 @@ double ceil_log_2(double x) {
   return n;
 }
 
+int sign(double x) {
+  return x > 0 ? 1 : -1;
+}
 

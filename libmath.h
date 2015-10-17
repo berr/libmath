@@ -4,6 +4,7 @@
 #include "constants.h"
 #include "basic.h"
 #include "exp.h"
+#include "trig.h"
 
 
 #endif
