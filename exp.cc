@@ -27,10 +27,6 @@ double exp(double x) {
 }
 
 
-
-
-#include <iostream>
-
 double ln(double x) {
   // Calculate ln as the alternating series ln(x+1) = (-1)^n x^n/n.
   // By the alternating series test, the remainder for the series is less
