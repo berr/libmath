@@ -24,18 +24,21 @@ double cos(double x) {
   // The convergence is given by the alterating series test
 
   x = simplify_rad(x);
-  if (x < PRECISION)
+  if (abs(x) < PRECISION)
     return 1;
-  if (x - pi < PRECISION)
+  if (abs(abs(x) - pi) < PRECISION)
     return -1;
-  if (x - pi / 2.0 < PRECISION)
+  if (abs(abs(x) - pi / 2.0) < PRECISION)
     return 0;
-       
+  if (abs(abs(x) - 3.0 * pi / 2.0) < PRECISION)
+    return 0;
+
   int n = 2;
   double value = 1;
   double x2 = x * x;
   double next_term = value * x2 / 2.0;
   int sign = 1;
+
     
   while(abs(next_term) > PRECISION) {
     sign = -sign;
@@ -62,11 +65,13 @@ double sin(double x) {
   // The convergence is given by the alterating series test
   x = simplify_rad(x);
 
-  if (x < PRECISION)
+  if (abs(x) < PRECISION)
     return 0;
-  if (x - pi / 2.0 < PRECISION)    
+  if (abs(abs(x) - pi) < PRECISION)
+    return 0;
+  if (abs(abs(x) - (pi / 2.0)) < PRECISION)
     return 1;
-  if (x - 3.0 * pi / 2.0 < PRECISION)
+  if (abs(abs(x) - 3.0 * pi / 2.0) < PRECISION)
     return -1;
   
   int n = 3;
