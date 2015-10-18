@@ -10,5 +10,8 @@ double csc(double x);
 double tan(double x);
 double cot(double x);
 
+double radian_to_degree(double o);
+double degree_to_radian(double o);
+
 
 #endif

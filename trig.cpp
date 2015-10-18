@@ -107,3 +107,20 @@ double cot(double x) {
   return cos(x)/sin(x);
 }
 
+double radian_to_degree(double o){
+  // pi * radians = 180 degrees
+  // 1 * radian = 180 / pi
+  // o radians = o * (180 / pi)
+  return o * (180.0 / pi);
+
+}
+
+double degree_to_radian(double o) {
+  // pi radians = 180 degrees
+  // 1 degree = pi / 180
+  // o degrees = o * pi / 180
+  return o * (pi / 180.0);
+
+}
+
+
