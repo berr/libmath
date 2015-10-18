@@ -5,6 +5,7 @@
 #include "basic.h"
 #include "exp.h"
 #include "trig.h"
+#include "invtrig.h"
 
 
 #endif
