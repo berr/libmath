@@ -1,6 +1,5 @@
 #include "invtrig.h"
 
-#include <iostream>
 
 double arcsin(double x) {
   // Computes the arcsin(x) = sin^(-1)(x). Which is the angle (in radians) that has the given sine.
