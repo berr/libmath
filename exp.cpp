@@ -44,7 +44,8 @@ double ln(double x) {
     factorization = M * log_2;
     x = x / exp_2_int(M);
   }
-    
+
+  // The series computes ln(x+1), so to obtain ln(x), we need to calculate for x-1.
   x -= 1;
   
   int n = 2;
